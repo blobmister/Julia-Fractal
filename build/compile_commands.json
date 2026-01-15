@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/krish/julia-fractal/build",
+  "command": "/usr/bin/c++  -I/home/krish/julia-fractal -std=c++23 -o CMakeFiles/main.dir/main.cxx.o -c /home/krish/julia-fractal/main.cxx",
+  "file": "/home/krish/julia-fractal/main.cxx",
+  "output": "CMakeFiles/main.dir/main.cxx.o"
+}
+]

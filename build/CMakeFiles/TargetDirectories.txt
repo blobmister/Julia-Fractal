@@ -1,0 +1,3 @@
+/home/krish/julia-fractal/build/CMakeFiles/main.dir
+/home/krish/julia-fractal/build/CMakeFiles/edit_cache.dir
+/home/krish/julia-fractal/build/CMakeFiles/rebuild_cache.dir
