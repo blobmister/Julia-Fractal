@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/krish/Julia-frac/build",
-  "command": "/usr/bin/c++  -I/home/krish/Julia-frac -std=c++23 -o CMakeFiles/main.dir/main.cxx.o -c /home/krish/Julia-frac/main.cxx",
-  "file": "/home/krish/Julia-frac/main.cxx",
-  "output": "CMakeFiles/main.dir/main.cxx.o"
-}
-]

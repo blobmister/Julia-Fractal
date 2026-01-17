@@ -1,3 +1,0 @@
-/home/krish/Julia-frac/build/CMakeFiles/main.dir
-/home/krish/Julia-frac/build/CMakeFiles/edit_cache.dir
-/home/krish/Julia-frac/build/CMakeFiles/rebuild_cache.dir
