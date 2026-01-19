@@ -71,7 +71,7 @@ __global__ static void kernel(Color* ptr, Fractal f, imageData d) {
 
     float avg_iter = total_iterations / (d.sampleNum * d.sampleNum);
 
-    if (avg_iter >= d.depth * 0.99f) {
+    if (avg_iter >= d.depth * 0.999f) {
         ptr[offset].r = 0;
         ptr[offset].g = 0;
         ptr[offset].b = 0;

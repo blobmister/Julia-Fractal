@@ -6,18 +6,18 @@
 
 
 // Image Setup
-int DIM = 3000;
+int DIM = 2000;
 double scale = 1.5;
 int sampleNum = 10;
-float colorFreq = 0.001f;
-float r_phase = 0.0f;
-float g_phase = 2.0f;
-float b_phase = 4.0f;
+float colorFreq = 0.01f;
+float r_phase = 3.14f;
+float g_phase = 3.14f;
+float b_phase = 0.0f;
 std::string filename = "image.ppm";
 
 
 // Fractal Setup
-complex c(-0.5125, 0.5123);
+complex c(-0.35, 0.35);
 int depth = 2000;
 double threshold = 1000;
 
