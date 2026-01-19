@@ -28,6 +28,6 @@ complex c(-0.5125, 0.5123);
 int depth = 2000;
 double threshold = 1000;
 ```
-<img width="330" height="330" alt="image" src="https://github.com/user-attachments/assets/e1d08562-5cbb-4b57-b126-2757adf8bb45" />
+<img width="2000" height="2000" alt="image" src="https://github.com/user-attachments/assets/d10028ff-79d8-4205-97e2-8545ca01e80d" />
 
 
