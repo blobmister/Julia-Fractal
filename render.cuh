@@ -21,6 +21,9 @@ struct ImageData {
     int depth;
     int sampleNum;
     float colorFreq;
+    float r_phase;
+    float g_phase;
+    float b_phase;
 };
 
 using color = struct Color;
@@ -29,10 +32,10 @@ using imageData = struct ImageData;
 /*
 * Helper function to calculate colour values
 */
-__device__ void map_color(float t, float freq, Color* c) {
-    c->r = (int)((sin(freq * t + 0.0f) * 0.5f + 0.5f) * 255);
-    c->g = (int)((sin(freq * t + 2.0f) * 0.5f + 0.5f) * 255);
-    c->b = (int)((sin(freq * t + 4.0f) * 0.5f + 0.5f) * 255);
+__device__ void map_color(float t, ImageData d, Color* c) {
+    c->r = (int)((sin(d.colorFreq * t + d.r_phase) * 0.5f + 0.5f) * 255);
+    c->g = (int)((sin(d.colorFreq * t + d.r_phase) * 0.5f + 0.5f) * 255);
+    c->b = (int)((sin(d.colorFreq * t + d.r_phase) * 0.5f + 0.5f) * 255);
 }
 
 /*
@@ -73,7 +76,7 @@ __global__ static void kernel(Color* ptr, Fractal f, imageData d) {
         ptr[offset].g = 0;
         ptr[offset].b = 0;
     } else {
-        map_color(avg_iter, d.colorFreq, &ptr[offset]);
+        map_color(avg_iter, d, &ptr[offset]);
     }
 }
 
